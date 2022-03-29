@@ -1,0 +1,44 @@
+.todo_wrap, .inprogress_wrap, .completed_wrap{
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    width: 60%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+ 
+.todo_heading, .inprogress_heading, .completed_heading{
+    background-color: rgb(211 211 211);
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .todo_list, .completed_list, .inprogress_list {
+    background: #fff;
+    box-shadow: 0 0 10px #0000000d;
+    color: #2a2e34;
+    margin: 0;
+    padding: 0;
+  }
+  .todo_list li , .completed_list li, .inprogress_list li{
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0 0 10px #0000000d;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .completed_list li{
+      justify-content: flex-start;
+  }
+  .list_arrow, .complete_tick{
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+  .list_arrow:hover, .complete_tick:hover{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #00000000;
+
+}

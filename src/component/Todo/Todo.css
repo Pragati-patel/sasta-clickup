@@ -1,0 +1,35 @@
+
+.todo_input_wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.add_task_input {
+  color: #7c828d;
+  background-color: #dfdbfb;
+  border: none;
+  padding: 1rem 0.5rem;
+  cursor: pointer;
+  width: 100%;
+}
+.add_task_input:hover{
+    width: fit-content;
+    background: rgba(188, 192, 199, 0.3);
+    border: none;
+    outline: none;
+}
+
+.add_task_input:active,
+.add_task_input:focus ,
+.add_task_btn:hover{
+  background: rgba(188, 192, 199, 0.3);
+  border: none;
+  outline: none;
+  width: 100%;
+}
+.add_task_btn {
+  border: none;
+  padding: 0 2rem;
+  background: rgba(188, 192, 199, 0.3);
+}
+
