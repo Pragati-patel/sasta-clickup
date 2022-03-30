@@ -1,4 +1,30 @@
-.completed_icon{
-    color: green;
-    padding-right: 1rem;
+.completed_icon {
+  color: green;
+  padding-right: 1rem;
+}
+.completed_list li {
+  padding: 1rem;
+}
+.start_time,
+.end_time,
+.time_taken {
+  display: flex;
+  justify-content: start;
+  align-items: baseline;
+}
+.start_time {
+  width: 35%;
+  flex-direction: column;
+}
+.start_time p,
+.end_time p {
+  padding: 0;
+  margin: 0;
+}
+.end_time {
+  flex-direction: column;
+  width: 35%;
+}
+.time_taken {
+  width: 30%;
 }

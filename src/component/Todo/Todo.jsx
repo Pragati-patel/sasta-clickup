@@ -10,14 +10,16 @@ export default function Todo({ data: todo, addTask, changeStatus }) {
   const handleChange = (e) => {
     setInput(e.target.value);
     SetShowButton(true);
+    if (!e.target.value) {
+      SetShowButton(false);
+    }
   };
 
- 
   const handleOnClick = () => {
     // setTask({...task, todo: [...task.todo, input]})
     addTask(input);
     setInput("");
-    SetShowButton(false);
+      SetShowButton(false);
   };
 
   return (
@@ -31,7 +33,7 @@ export default function Todo({ data: todo, addTask, changeStatus }) {
               <AiOutlineRight
                 size={"1rem"}
                 className="list_arrow"
-                onClick={() => changeStatus("todo","inprogress",index)}
+                onClick={() => changeStatus("todo", "inprogress", index)}
               />
             </li>
           );

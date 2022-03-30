@@ -30,6 +30,9 @@
     align-items: center;
     justify-content: space-between;
   }
+  .todo_list li:hover, .completed_list li:hover, .inprogress_list li:hover{
+    background: #fafbfc;
+  }
   .completed_list li{
       justify-content: flex-start;
   }

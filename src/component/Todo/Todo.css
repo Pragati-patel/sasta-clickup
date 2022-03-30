@@ -3,6 +3,12 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
+  background-color: #dfdbfb;
+
+}
+.todo_input_wrap input{
+  color: #7c828d;
+
 }
 .add_task_input {
   color: #7c828d;
@@ -17,15 +23,13 @@
     background: rgba(188, 192, 199, 0.3);
     border: none;
     outline: none;
+    width: 100%;
 }
 
 .add_task_input:active,
 .add_task_input:focus ,
 .add_task_btn:hover{
-  background: rgba(188, 192, 199, 0.3);
-  border: none;
   outline: none;
-  width: 100%;
 }
 .add_task_btn {
   border: none;

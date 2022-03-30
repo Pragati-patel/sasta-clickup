@@ -1,3 +1,15 @@
 .complete_tick:hover{
     color: green;
 }
+.task__div, .time__div, .icon__div{
+    display: flex;
+}
+.task__div{
+    width: 60%;
+}
+.time__div{
+    width: 40%;
+}
+.icon__div{
+    justify-content: end;
+}
